@@ -1,2 +1,7 @@
 # Sliding-Puzzle
-Sliding puzzle game created with html css and javascript. Try to recreate the correct image.
+Play this Sliding puzzle game and recreate the correct image.
+
+TODO:
+* make sure puzzle is possible
+* different images
+* different sizes
