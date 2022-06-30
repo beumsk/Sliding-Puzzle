@@ -12,6 +12,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: Arial;
+  background: #95377f;
   background: linear-gradient(to bottom right, #e53935, #5e35b1);
   text-align: center;
 }
@@ -32,6 +33,10 @@ header {
   box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.3);
   border: solid 1px white;
   margin: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .puzzle .items {
   display: inline;
@@ -45,6 +50,10 @@ header {
   color: rgba(0, 0, 0, 0);
   background: url(https://res.cloudinary.com/beumsk/image/upload/v1513108563/tiger_veeob8.jpg);
   background-size: 300%;
+}
+.puzzle .item {
+  background-image: none;
+  background-position: bottom right;
 }
 .puzzle .item1 {
   background-position: top left;
@@ -70,8 +79,35 @@ header {
 .puzzle .item8 {
   background-position: bottom;
 }
-.puzzle .item {
-  background-position: bottom right;
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal__box {
+  padding: 40px 60px;
+  background: white;
+  border-radius: 2px;
+}
+.modal .modal__box .modal__button {
+  color: #95377f;
+  border: solid 1px #95377f;
+  border-radius: 2px;
+  padding: 10px 20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.modal .modal__box .modal__button:hover {
+  color: white;
+  background: #95377f;
 }
 
 footer {
@@ -87,4 +123,8 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
